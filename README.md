@@ -20,4 +20,6 @@ idée  :
   
 - Se renseigner sur Vuex pour l'intégrer dans un exos 
 
-
+- Ajout d'un formulaire de contact
+  - => gestion formulaire avec envoie adresse mail
+  - => tenter de faire un formulaire dynamique
