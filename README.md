@@ -57,18 +57,18 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## organisation retenue
 
-###petit cours de 10min pour expliquer les bases :             Matteo
+### petit cours de 10min pour expliquer les bases :             Matteo
 * introduction ce que c'est
 * dans cas l'utiliser d'utilisation
 * structures (template, script , css et les cycle de vie)
 * explication de ce qu'ils vont faire et leurs utilitées
-###exercice :                        donovan
+### exercice :                        donovan
 
 * v-if
 * v-for
 * v-onClick
 
-###td après : Mathias / Matteo
+### td après : Mathias / Matteo
 
 * Routing                           ==> Mathias
 * Api                               ==> Mathias
