@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-
+    <nav>
+      <router-link to="/">HomeView</router-link> |
+      <router-link to="/movies">Movies</router-link>
+    </nav>
+    <Movies/>
   </div>
 </template>
 <script>
@@ -8,10 +12,13 @@
 
 
 
+import Movies from "@/pages/Movies";
+
 export default {
 
 
   components: {
+    Movies
   }
 }
 
@@ -21,8 +28,6 @@ export default {
 @import "styles/reset.scss";
 
 #app {
-
-
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
