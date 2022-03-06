@@ -36,10 +36,6 @@ export default {
 
   computed:{
 
-    apiUrl()
-    {
-      return
-    },
 
   },
 
