@@ -1,25 +1,23 @@
 <template>
  <!--remplisser les infos pour avoir le résultat de la maquette -->
-  <section class="Movie" @click="movieInfos(data.id)">
+  <section class="Movie" >
     <div class="header">
-      <img :src="IMG_API + data.poster_path" :alt="data.title">
+      <!-- ajout le chemin de l'image après la variable IMG_API pour afficher l'image
+           son libélé est poster_path et pour le alt le titre "title"-->
+      <img :src="IMG_API + [/*inserer le posterpath retirer (les crochets)*/ ]" :alt="[/*inserer le le titre*/]"/>
       <div class="Movie_info">
-        <h3> {{data.title}}</h3>
+        <!-- titre du film -->
+       <h3> </h3>
+       <!-- avec un v-bind:class fait changer la couleur du background en fonction de la note bleu orange rouge
+            tips : utiliser une fonction qui renvoie les différentes class          -->
+        <!-- dans le span mettez la note moyenne "vote_average" -->
+           <span v-bind:class=""></span>
+         </div>
 
-        <!-- avec un v-bind:class fait changer la couleur du background en fonction de la note bleu orange rouge
-             tips : utiliser une fonction qui renvoie les différentes class          -->
-
-        <span v-bind:class="setVoteClass(data.vote_average)">{{data.vote_average}}</span>
-
-      </div>
-
-      <div class="Movie_overview">
-        <p>{{data.overview}}</p>
-      </div>
-      <!--      <span>-->
-      <!--&lt;!&ndash;        <router-link to="movie/{{id}}"> </router-link>&ndash;&gt;-->
-      <!--        En savoir plus :-->
-      <!--        </span>-->
+         <div class="Movie_overview">
+           <!-- dans le p mettez le résumer "overview" -->
+           <p></p>
+         </div>
     </div>
   </section>
 </template>
@@ -35,28 +33,20 @@ export default {
     }
   },
 
+  //vous devez recupérer votre object data
   props : {
-    'data' : Object
+
   },
 
   methods:{
 
-    movieInfos(id){
-      console.log('cliquer sur le film',id);
+
 
     },
 
-    setVoteClass(vote)  {
-      if (vote>=8){
-        return 'taggreen';
-      }else if(vote>=5){
-        return  'tagorange';
-      }else {
-        return 'tagred';
-      }
-    }
 
-  },
+
+
 
 
 }

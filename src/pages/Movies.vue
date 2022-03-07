@@ -4,8 +4,8 @@
     <!-- Completer pour que la boucle for affiche tout les films
        tips penser à utiliser le components Movie et de le remplir avant
        -->
-    <div v-for="item in results" :key="item.id" class="movie_container">
-      <Movie class="movies" :data="item" />
+    <div>
+        <Movie/>
     </div>
 
 
@@ -27,8 +27,7 @@ export default {
 
   async created() {
 
-    const rawResponse = await fetch("https:/api.themoviedb.org/3/discover/"+
-        "movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1",{
+    const rawResponse = await fetch("https:/api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1",{
       method: 'GET',
       headers: {
         'Accept': 'application/json',
@@ -38,6 +37,7 @@ export default {
     });
     const content = await rawResponse.json();
     console.log(content);
+    //récupération du résultat dans une variable
     this.results = content.results
 
   },
@@ -49,9 +49,6 @@ export default {
   components:{
     Movie
   }
-
-
-
 }
 </script>
 
@@ -62,6 +59,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   background-color: rgb(17, 125, 192);
+  height: 100%;
   font-family: Helvetica, sans-serif;
 }
 
