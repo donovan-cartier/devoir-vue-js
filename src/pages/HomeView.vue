@@ -30,7 +30,6 @@ export default {
     Exercice3
   }
 }
-
 </script>
 
 <style>
@@ -80,13 +79,13 @@ header>p{
 }
 
 .exercice1{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 40px 40px; 
-    grid-template-areas: 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 40px;
+    grid-template-areas:
       ". ."
-      ". ."; 
+      ". .";
     margin-top: 1vh;
 }
 
