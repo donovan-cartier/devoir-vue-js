@@ -1,6 +1,9 @@
 
 <template>
   <section class="Movies">
+    <!-- Completer pour que la boucle for affiche tout les films
+       tips penser à utiliser le components Movie et de le remplir avant
+       -->
     <div v-for="item in results" :key="item.id" class="movie_container">
       <Movie class="movies" :data="item" />
     </div>
@@ -54,9 +57,12 @@ export default {
 
 <style lang="css">
 .Movies{
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: rgb(17, 125, 192);
+  font-family: Helvetica, sans-serif;
 }
 
 

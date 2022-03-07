@@ -1,12 +1,20 @@
-
 <template>
+ <!--remplisser les infos pour avoir le résultat de la maquette -->
   <section class="Movie" @click="movieInfos(data.id)">
     <div class="header">
       <img :src="IMG_API + data.poster_path" :alt="data.title">
       <div class="Movie_info">
         <h3> {{data.title}}</h3>
+
+        <!-- avec un v-bind:class fait changer la couleur du background en fonction de la note bleu orange rouge
+             tips : utiliser une fonction qui renvoie les différentes class          -->
+
         <span v-bind:class="setVoteClass(data.vote_average)">{{data.vote_average}}</span>
 
+      </div>
+
+      <div class="Movie_overview">
+        <p>{{data.overview}}</p>
       </div>
       <!--      <span>-->
       <!--&lt;!&ndash;        <router-link to="movie/{{id}}"> </router-link>&ndash;&gt;-->
