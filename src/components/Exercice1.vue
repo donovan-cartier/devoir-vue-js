@@ -86,5 +86,10 @@ export default {
      background-color: rgba(0, 0, 255, .2);
     padding: 10px;
     border-radius: 5px;
+  color: #FFFFFF;
+}
+h2{
+  color:#FFFFFF ;
+  text-align: left;
 }
 </style>

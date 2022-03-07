@@ -1,35 +1,27 @@
 <template>
   <div id="app">
-    <HomeView/>
     <nav>
       <h1>Vue.js</h1>
       <router-link to="/">HomeView</router-link> |
-      <router-link to="/movies">Movies</router-link>
       <p>Réparez cette page !</p>
     </nav>
-    <Movies/>
+
+    <router-view/>
   </div>
 </template>
+
 <script>
-
-import HomeView from '@/pages/HomeView.vue';
-
-
-import Movies from "@/pages/Movies";
-
 export default {
 
+components:{
 
-  components: {
-    HomeView,
-    Movies
-  }
+}
+
 }
 
 
 </script>
 <style lang="scss">
-@import "styles/reset.scss";
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -70,5 +62,6 @@ nav>p{
   font-style: italic;
   text-decoration: underline;
   margin-right: 1vw;
+  color: #FFFFFF;
 }
 </style>

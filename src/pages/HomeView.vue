@@ -1,12 +1,9 @@
 <template>
   <div class="home">
-  <header>
-          <h1>Vue.js</h1>
-          <p>Réparez cette page !</p>
-      </header>
+
     <img src="../assets/logo.png" alt="" id="logoVue">
 
-    <Exercice1/>
+    <Exercice1 />
     <Exercice2/>
     <Exercice3/>
 
@@ -71,6 +68,7 @@ header>p{
     font-style: italic;
     text-decoration: underline;
     margin-right: 1vw;
+  color: #FFFFFF;
 }
 
 .globalFlex{
@@ -92,6 +90,8 @@ header>p{
 h2{
     margin-top: 2vh;
     margin-left: 1vw;
+    text-align: left;
+    color: #FFFFFF;
 }
 .exercice1>div{
     border: 1px white solid;

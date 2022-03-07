@@ -63,7 +63,7 @@ export default {
             {
                 name: "Cerise",
                 estMur: false,
-                couleur: 'Rouge'
+                couleur: 'Rose'
             },
         ]
     }
@@ -73,7 +73,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="css">
 
 #exercice-2{
     display: flex;
@@ -87,6 +87,7 @@ export default {
     background-color: rgba(0, 0, 255, .2);
     padding: 10px;
     border-radius: 5px;
+  color: #FFFFFF;
 }
 
 </style>
