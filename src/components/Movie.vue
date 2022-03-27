@@ -6,17 +6,20 @@
            son libélé est poster_path et pour le alt le titre "title"-->
       <img :src="IMG_API + [/*inserer le posterpath retirer (les crochets)*/ ]" :alt="[/*inserer le le titre*/]"/>
       <div class="Movie_info">
-        <!-- titre du film -->
-       <h3> </h3>
-       <!-- avec un v-bind:class fait changer la couleur du background en fonction de la note bleu orange rouge
-            tips : utiliser une fonction qui renvoie les différentes class          -->
-        <!-- dans le span mettez la note moyenne "vote_average" -->
-           <span v-bind:class=""></span>
+       <h3>
+				 <!--afficher le titre du film -->
+			 </h3>
+       <!-- avec un v-bind:class fait changer la couleur du background en fonction de la note bleu orange rouge-->
+
+           <span >
+						   <!-- afficher la note moyenne "vote_average" -->
+					 </span>
          </div>
 
          <div class="Movie_overview">
-           <!-- dans le p mettez le résumer "overview" -->
-           <p></p>
+           <p>
+						 <!--afficher le résumer "overview" -->
+					 </p>
          </div>
     </div>
   </section>
@@ -33,7 +36,7 @@ export default {
     }
   },
 
-  //vous devez recupérer votre object data
+  //vous devez recupérer votre object du parents
   props : {
 
   },
@@ -41,17 +44,11 @@ export default {
   methods:{
 
 
-
     },
-
-
-
-
-
-
 }
 </script>
 
+<!--pas besoins de toucher au class css déjà créer mais vous pouvez en ajouter-->
 <style lang="css">
 .Movie{
   width: 300px;

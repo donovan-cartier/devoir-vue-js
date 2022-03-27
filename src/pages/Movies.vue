@@ -1,9 +1,7 @@
 
 <template>
   <section class="Movies">
-    <!-- Completer pour que la boucle for affiche tout les films
-       tips penser à utiliser le components Movie et de le remplir avant
-       -->
+<!--     TODO :Completer pour que la boucle for affiche tout les films -->
     <div>
         <Movie/>
     </div>
@@ -21,7 +19,7 @@ export default {
 
   data(){
     return{
-      results:{}
+
     }
   },
 
@@ -37,8 +35,7 @@ export default {
     });
     const content = await rawResponse.json();
     console.log(content);
-    //récupération du résultat dans une variable
-    this.results = content.results
+    // TODO :récupération du résultat dans une variable du composant
 
   },
 
